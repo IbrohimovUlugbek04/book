@@ -1,0 +1,62 @@
+.site-header__logo-book {
+  font-size: 40px;
+  color: #f07427;
+}
+
+.hero {
+  background-color: #f0ead6;
+}
+
+.hero-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.form-control {
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.form-control:focus {
+  border-color: #f07427;
+}
+
+.hero__search-button {
+  border-radius: 15px;
+}
+
+.hero__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.hero__item-img {
+  margin-bottom: 20px;
+}
+
+.hero__item-heading {
+  color: #f07427;
+}
+
+.hero__item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__list-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

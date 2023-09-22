@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Books</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- site header start -->
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__wrapper d-flex align-items-center pt-3 pb-3">
+          <a
+            class="site-header__logo-link d-flex align-items-center text-decoration-none"
+            href="./index.html"
+            title="Books"
+          >
+            <img
+              class="site-header__logo-img d-block"
+              width="70"
+              src="./icons/book-icon.svg"
+              alt="book"
+            />
+            <span class="site-header__logo-book ms-lg-2">Books</span>
+          </a>
+          <div class="site-heade__sing-box ms-auto">
+            <form>
+              <button
+                class="site-header__button btn btn-outline-warning me-2"
+                type="button"
+                title="Login"
+                aria-label="Login"
+              >
+                Login
+              </button>
+              <button
+                class="site-header__button btn btn-outline-warning"
+                type="button"
+                title="Sign up"
+                aria-label="Sign up"
+              >
+                Sign up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- site header finish -->
+    <!-- site main start  -->
+    <main class="site-main">
+      <!-- site hero start  -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <h1 class="hero__heading visually-hidden">Books</h1>
+            <form class="hero__form js-hero-form mb-5">
+              <div class="hero__search-box d-flex align-content-center mb-3">
+                <input
+                  class="hero__search-input w-100 js-search-input form-control form-control-sm shadow-none"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  title="Search"
+                />
+                <button
+                  class="hero__search-button btn btn-warning ms-3 ps-5 pe-5"
+                  type="submit"
+                  aria-label="Find"
+                  title="Find"
+                >
+                  Find
+                </button>
+              </div>
+              <div class="hero__search-box d-flex align-items-center gap-2">
+                <select
+                  class="hero__search-sort w-25 js-search-input form-control form-control-sm shadow-none"
+                  name="search-sort"
+                  aria-label="Book sort"
+                ></select>
+                <select
+                  class="hero__search-year w-25 js-search-input form-control form-control-sm shadow-none"
+                  name="search-year"
+                  aria-label="Book year"
+                ></select>
+                <select
+                  class="hero__search-author w-25 js-search-input form-control form-control-sm shadow-none"
+                  name="search-author"
+                  aria-label="Book Author"
+                ></select>
+                <select
+                  class="hero__search-language w-25 js-search-input form-control form-control-sm shadow-none"
+                  name="search-language"
+                  aria-label="Book language"
+                ></select>
+              </div>
+            </form>
+            <h2 class="visually-hidden">Book</h2>
+            <ul
+              class="hero__list d-flex justify-content-between flex-wrap mt-0 mb-0 ps-0 list-unstyled"
+            ></ul>
+          </div>
+        </div>
+      </section>
+      <!-- site hero finish  -->
+    </main>
+    <!-- site main finish  -->
+    <!-- scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="/js/books.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
