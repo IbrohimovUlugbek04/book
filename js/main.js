@@ -119,13 +119,15 @@ elForm.addEventListener("submit", (evt) => {
   elList.innerHTML = null;
   evt.preventDefault();
   var inputVal = elInput.value.trim();
+
   var selectYearVal = Number(elSelectYear.value);
   var selectAuthorVal = elSelectAuthor.value;
   var selectLanguageVal = elSelectLanguage.value;
   var newRegex = new RegExp(inputVal, "gi");
   var bookSearch = books.filter(item => {
-    return item.title.match(newRegex)
+   return  item.title.match(newRegex) 
   })
+
   if (bookSearch.length > 0) {
     elementCreteFunc(bookSearch)
   } else {
