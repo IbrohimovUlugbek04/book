@@ -1,4 +1,3 @@
-
 var elForm = document.querySelector(".js-hero-form");
 var elInput = document.querySelector(".hero__search-input");
 var elSelectSort = document.querySelector(".hero__search-sort");
@@ -67,10 +66,8 @@ function formFuncBook(booksfunc) {
 }
 formFuncBook(books)
 // Form books function finish
-
 function elementCreteFunc(book) {
   book.forEach(bookFor => {
-
     var bookItem = document.createElement("li");
     var bookImg = document.createElement("img");
     var bookBox = document.createElement("div");
@@ -120,17 +117,16 @@ elForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
   var inputVal = elInput.value.trim();
 
-  var selectYearVal = Number(elSelectYear.value);
+  var selectYearVal = elSelectYear.value;
   var selectAuthorVal = elSelectAuthor.value;
   var selectLanguageVal = elSelectLanguage.value;
   var newRegex = new RegExp(inputVal, "gi");
   var bookSearch = books.filter(item => {
-   return  item.title.match(newRegex) 
+    return item.title.match(newRegex) && (item.year == Number(selectYearVal) || selectYearVal == "Year") && (item.language.includes(selectLanguageVal) || selectLanguageVal == "Language") && (item.author.includes(selectAuthorVal) || selectAuthorVal == "Author")
   })
-
   if (bookSearch.length > 0) {
     elementCreteFunc(bookSearch)
   } else {
-    elList.textContent = "Xatolik 404"
+    elList.textContent = "Afsuski bu ma'lumot topilmadi!"
   }
 });
